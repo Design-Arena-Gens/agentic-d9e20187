@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Agentic Slack Clone</title>
+  <meta name="description" content="Slack-like chat UI using localStorage" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: "#1A1D21",
+            sidebar: "#1F2226",
+            surface: "#22262A",
+            primary: { DEFAULT: "#4A9EFA", foreground: "#101317" },
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    :root { color-scheme: dark; }
+    body { background: #1A1D21; color: #fff; }
+    *::-webkit-scrollbar { width: 10px; height: 10px; }
+    *::-webkit-scrollbar-track { background: transparent; }
+    *::-webkit-scrollbar-thumb { background: #343a40; border-radius: 6px; }
+    a { color: inherit; text-decoration: none; }
+  </style>
+</head>
+<body class="antialiased">
+  <div id="app" class="flex min-h-screen"></div>
+  <script type="module" src="/app.js"></script>
+</body>
+</html>
